@@ -1,0 +1,37 @@
+# César Damasceno
+
+> Desenvolvedor web — React, Node e TypeScript. Portfólio de projetos.
+
+Site de apresentação pessoal (portfólio), estilo terminal/Matrix.
+
+## Contato
+- E-mail: [mirandacesar598@gmail.com](mailto:mirandacesar598@gmail.com)
+- GitHub: [github.com/ManeMaria](https://github.com/ManeMaria)
+- LinkedIn: [linkedin.com/in/cesardamasceno-dev](https://www.linkedin.com/in/cesardamasceno-dev/)
+
+## Dados estruturados
+- [Currículo (JSON Resume)](/resume.json)
+- JSON-LD (schema.org/Person): embutido no `<head>` de [/index.html](/)
+
+## Stack
+TypeScript, React, Node.js, NestJS, TanStack, Tailwind CSS, Prisma, Docker, JWT / Auth, Micro Frontends, Python / Django, Go, C#, Claude Code.
+
+## Experiência — projetos na Loomi
+- People Central API — Gestão de RH (NestJS, Prisma, PostgreSQL, JWT, Swagger)
+- Trybo BFF Web Service — E-commerce (NestJS, Microservices, AWS, Redis, RabbitMQ)
+- User API — Microserviço em Go (Go, PostgreSQL, Docker)
+- Múltiplo Client — Dashboard SaaS (React, TypeScript, Radix UI, React Query)
+- Portal do Morador — Plataforma Residencial (Next.js, Tailwind CSS, TypeScript, Cypress)
+
+## Projetos em destaque
+- [Dr1p-site](https://github.com/ManeMaria/Dr1p-site) — site institucional. [demo](https://dr1p-site.vercel.app)
+- [3d_elements_website](https://github.com/ManeMaria/3d_elements_website) — site experimental com elementos 3D (React Three Fiber/Drei). [demo](https://manemaria.github.io/3d_elements_website/)
+- [mfe-mf-service-POC](https://github.com/ManeMaria/mfe-mf-service-POC) — POC de micro frontends com builds independentes e roteamento via Nginx.
+- [instagram-downloader-api](https://github.com/ManeMaria/instagram-downloader-api) — API para baixar mídias públicas do Instagram a partir de uma URL.
+- [assign_keys](https://github.com/ManeMaria/assign_keys) — endpoint que gera token JWT assinado com chave privada RSA (RS256).
+- [tempo-no-forno](https://github.com/ManeMaria/tempo-no-forno) — app de receitas culinárias.
+- [website_apresetation_s30_PM](https://github.com/ManeMaria/website_apresetation_s30_PM) — single page de apresentação do serviço S30.
+- [matrix-rain](https://github.com/ManeMaria/matrix-rain) — chuva de código estilo Matrix em canvas puro, sem dependências. [demo](https://manemaria.github.io/matrix-rain/)
+- [claude-plugins](https://github.com/ManeMaria/claude-plugins) — marketplace interno de plugins para o Claude Code.
+
+Lista completa de projetos: [/projetos](/projetos)

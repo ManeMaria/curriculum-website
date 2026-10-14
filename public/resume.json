@@ -1,0 +1,118 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "César Damasceno",
+    "label": "Web Developer | React | Node | TypeScript",
+    "email": "mirandacesar598@gmail.com",
+    "url": "https://github.com/ManeMaria",
+    "summary": "Desenvolvedor web focado em React, Node.js e TypeScript. Construindo interfaces e APIs em Pernambuco, Brasil.",
+    "location": {
+      "region": "Pernambuco",
+      "countryCode": "BR"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "ManeMaria",
+        "url": "https://github.com/ManeMaria"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "cesardamasceno-dev",
+        "url": "https://www.linkedin.com/in/cesardamasceno-dev/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Loomi",
+      "url": "https://loomi.com.br",
+      "position": "Web Developer",
+      "highlights": [
+        "People Central API — Gestão de RH (NestJS, Prisma, PostgreSQL, JWT, Swagger): API para 500+ usuários simultâneos.",
+        "Trybo BFF Web Service — E-commerce (NestJS, Microservices, AWS, Redis, RabbitMQ): BFF agregando 8 APIs, cache distribuído.",
+        "User API — Microserviço em Go (Go, PostgreSQL, Docker): gestão de usuários, 1000+ req/seg.",
+        "Múltiplo Client — Dashboard SaaS (React, TypeScript, Radix UI, React Query): dashboard para 10k+ usuários ativos.",
+        "Portal do Morador — Plataforma Residencial (Next.js, Tailwind CSS, TypeScript, Cypress): SSR/SSG, testes e2e."
+      ]
+    },
+    {
+      "name": "Multtipay"
+    },
+    {
+      "name": "NTD Soft"
+    }
+  ],
+  "skills": [
+    { "name": "TypeScript" },
+    { "name": "React" },
+    { "name": "Node.js" },
+    { "name": "NestJS" },
+    { "name": "TanStack" },
+    { "name": "Tailwind CSS" },
+    { "name": "Prisma" },
+    { "name": "Docker" },
+    { "name": "JWT / Auth" },
+    { "name": "Micro Frontends" },
+    { "name": "Python / Django" },
+    { "name": "Go" },
+    { "name": "C#" },
+    { "name": "Claude Code" }
+  ],
+  "projects": [
+    {
+      "name": "matrix-rain",
+      "description": "Chuva de código estilo Matrix renderizada em canvas puro, sem dependências.",
+      "url": "https://github.com/ManeMaria/matrix-rain",
+      "keywords": ["JavaScript", "Canvas"]
+    },
+    {
+      "name": "claude-plugins",
+      "description": "Marketplace interno de plugins para o Claude Code.",
+      "url": "https://github.com/ManeMaria/claude-plugins",
+      "keywords": ["Shell", "DevTools"]
+    },
+    {
+      "name": "mfe-mf-service-POC",
+      "description": "POC de micro frontends: builds independentes com versões diferentes de React e roteamento via Nginx.",
+      "url": "https://github.com/ManeMaria/mfe-mf-service-POC",
+      "keywords": ["React", "JavaScript", "Nginx"]
+    },
+    {
+      "name": "instagram-downloader-api",
+      "description": "API para baixar mídias (fotos/vídeos) públicas do Instagram a partir de uma URL.",
+      "url": "https://github.com/ManeMaria/instagram-downloader-api",
+      "keywords": ["TypeScript", "Node", "API"]
+    },
+    {
+      "name": "assign_keys",
+      "description": "Endpoint que gera um token JWT assinado com chave privada RSA (.pem), usando RS256.",
+      "url": "https://github.com/ManeMaria/assign_keys",
+      "keywords": ["JavaScript", "JWT", "Security"]
+    },
+    {
+      "name": "tempo-no-forno",
+      "description": "App para quem está com pressa e quer preparar receitas em menos tempo — ou sem pressa, com mais tempo de forno.",
+      "url": "https://github.com/ManeMaria/tempo-no-forno",
+      "keywords": ["TypeScript", "React"]
+    },
+    {
+      "name": "Dr1p-site",
+      "description": "Site institucional construído em TypeScript.",
+      "url": "https://github.com/ManeMaria/Dr1p-site",
+      "keywords": ["TypeScript"]
+    },
+    {
+      "name": "website_apresetation_s30_PM",
+      "description": "Single page de apresentação do serviço S30.",
+      "url": "https://github.com/ManeMaria/website_apresetation_s30_PM",
+      "keywords": ["TypeScript"]
+    },
+    {
+      "name": "3d_elements_website",
+      "description": "Site experimental com elementos 3D interativos usando React Three Fiber e Drei.",
+      "url": "https://github.com/ManeMaria/3d_elements_website",
+      "keywords": ["React", "TypeScript", "Three.js"]
+    }
+  ]
+}
