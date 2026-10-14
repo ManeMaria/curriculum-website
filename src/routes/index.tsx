@@ -51,8 +51,19 @@ function Home() {
         </div>
       </section>
 
+      <section id="sobre">
+        <SectionHeading index="01" title="Stack" />
+        <div className="flex flex-wrap gap-2">
+          {stack.map((tech) => (
+            <Badge key={tech} variant="outline" className="border-primary/30 text-primary/80 font-mono">
+              {tech}
+            </Badge>
+          ))}
+        </div>
+      </section>
+
       <section id="projetos">
-        <SectionHeading index="01" title="Projetos" subtitle="selecionados" />
+        <SectionHeading index="02" title="Projetos" subtitle="selecionados" />
         <div className="grid gap-4 sm:grid-cols-2">
           {featured.map((project) => (
             <ProjectCard key={project.slug} project={project} />
@@ -66,7 +77,7 @@ function Home() {
       </section>
 
       <section id="experiencia">
-        <SectionHeading index="02" title="Experiência" subtitle="projetos na Loomi" />
+        <SectionHeading index="03" title="Experiência" subtitle="projetos na Loomi" />
         <div className="grid gap-4 sm:grid-cols-2">
           {workProjects.map((work) => (
             <Card key={work.name} className="border-border bg-card/60">
@@ -82,17 +93,6 @@ function Home() {
                 ))}
               </CardContent>
             </Card>
-          ))}
-        </div>
-      </section>
-
-      <section id="sobre">
-        <SectionHeading index="03" title="Stack" />
-        <div className="flex flex-wrap gap-2">
-          {stack.map((tech) => (
-            <Badge key={tech} variant="outline" className="border-primary/30 text-primary/80 font-mono">
-              {tech}
-            </Badge>
           ))}
         </div>
       </section>

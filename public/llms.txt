@@ -14,7 +14,7 @@ Site de apresentação pessoal (portfólio), estilo terminal/Matrix.
 - JSON-LD (schema.org/Person): embutido no `<head>` de [/index.html](/)
 
 ## Stack
-TypeScript, React, Node.js, NestJS, TanStack, Tailwind CSS, Prisma, Docker, JWT / Auth, Micro Frontends, Python / Django, Go, C#, Claude Code.
+TypeScript, React, Node.js, NestJS, TanStack, Tailwind CSS, Prisma, JWT / Auth, Micro Frontends, Python / Django, Go, C#, Claude Code, Docker, Docker Compose, Nginx, S3, EC2, Cognito, Linux, SOLID, DDD, Playwright, Jest, Vitest, Langfuse, LangChain, LangGraph, MongoDB, PostgreSQL, Neo4j, Vercel, Netlify, GitHub Actions.
 
 ## Experiência — projetos na Loomi
 - People Central API — Gestão de RH (NestJS, Prisma, PostgreSQL, JWT, Swagger)
