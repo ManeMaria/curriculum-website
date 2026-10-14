@@ -88,4 +88,24 @@
       0 0 6px color-mix(in oklab, var(--primary) 80%, transparent),
       0 0 18px color-mix(in oklab, var(--primary) 45%, transparent);
   }
+
+  .matrix-loader-cell {
+    background: var(--primary);
+    box-shadow:
+      0 0 2px var(--foreground),
+      0 0 6px color-mix(in oklab, var(--primary) 80%, transparent),
+      0 0 14px color-mix(in oklab, var(--primary) 60%, transparent);
+    animation: matrix-loader-pulse 0.8s linear infinite alternate;
+  }
+
+  @keyframes matrix-loader-pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+  }
 }

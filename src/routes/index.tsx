@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { Mail } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
@@ -16,6 +17,7 @@ export const Route = createFileRoute('/')({
 
 function Home() {
   const featured = projects.slice(0, 4)
+  const [portraitLoaded, setPortraitLoaded] = useState(false)
 
   return (
     <div className="flex flex-col gap-24 py-16 sm:py-24">
@@ -40,13 +42,31 @@ function Home() {
             </Button>
           </div>
         </div>
-        <div className="border-primary/30 shadow-primary/10 mx-auto w-full max-w-xs overflow-hidden rounded-lg border shadow-lg sm:max-w-sm">
+        <div className="border-primary/30 shadow-primary/10 relative mx-auto w-full max-w-xs overflow-hidden rounded-lg border shadow-lg sm:max-w-sm">
+          {!portraitLoaded && (
+            <div className="bg-card absolute inset-0 flex items-center justify-center">
+              <ul className="grid grid-cols-5 gap-2">
+                {Array.from({ length: 25 }).map((_, i) => {
+                  const row = Math.floor(i / 5)
+                  const col = i % 5
+                  return (
+                    <li
+                      key={i}
+                      className="matrix-loader-cell size-3 rounded-sm"
+                      style={{ animationDelay: `${0.1 * (row + col + 1)}s` }}
+                    />
+                  )
+                })}
+              </ul>
+            </div>
+          )}
           <img
             src={portrait}
             alt="Retrato de César Damasceno estilizado como chuva digital Matrix"
-            className="w-full"
-            width={900}
-            height={1350}
+            className={`w-full transition-opacity duration-500 ${portraitLoaded ? 'opacity-100' : 'opacity-0'}`}
+            width={768}
+            height={1152}
+            onLoad={() => setPortraitLoaded(true)}
           />
         </div>
       </section>
