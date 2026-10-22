@@ -5,6 +5,9 @@ export type Project = {
   tags: string[]
   repo: string
   demo?: string
+  overview?: string
+  challenge?: string
+  solution?: string
 }
 
 export const projects: Project[] = [
@@ -15,6 +18,9 @@ export const projects: Project[] = [
     tags: ['TypeScript'],
     repo: 'https://github.com/ManeMaria/Dr1p-site',
     demo: 'https://dr1p-site.vercel.app',
+    overview: 'Site institucional para apresentar a marca e os produtos com uma navegação simples e direta.',
+    challenge: 'Entregar uma presença online rápida, sem depender de um CMS pesado.',
+    solution: 'Site estático em TypeScript, com build leve e deploy automatizado via Vercel.',
   },
   {
     slug: '3d-elements-website',
@@ -23,6 +29,9 @@ export const projects: Project[] = [
     tags: ['React', 'TypeScript', 'Three.js'],
     repo: 'https://github.com/ManeMaria/3d_elements_website',
     demo: 'https://manemaria.github.io/3d_elements_website/',
+    overview: 'Experimento de interface com cenas 3D interativas no navegador.',
+    challenge: 'Explorar React Three Fiber mantendo performance aceitável em uma SPA comum.',
+    solution: 'Cenas compostas com Drei, controles de câmera e carregamento sob demanda dos modelos.',
   },
   {
     slug: 'mfe-mf-service-poc',
@@ -31,6 +40,9 @@ export const projects: Project[] = [
       'POC de micro frontends: builds independentes com versões diferentes de React e roteamento via Nginx.',
     tags: ['React', 'JavaScript', 'Nginx'],
     repo: 'https://github.com/ManeMaria/mfe-mf-service-POC',
+    overview: 'Prova de conceito de arquitetura de micro frontends com times independentes.',
+    challenge: 'Rodar múltiplos apps React, em versões diferentes, sob um único domínio.',
+    solution: 'Builds isolados por app e roteamento de path feito via Nginx, sem acoplar as versões de React.',
   },
   {
     slug: 'instagram-downloader-api',
@@ -38,6 +50,9 @@ export const projects: Project[] = [
     description: 'API para baixar mídias (fotos/vídeos) públicas do Instagram a partir de uma URL.',
     tags: ['TypeScript', 'Node', 'API'],
     repo: 'https://github.com/ManeMaria/instagram-downloader-api',
+    overview: 'API simples para extrair mídia pública do Instagram a partir de uma URL de post.',
+    challenge: 'Resolver a URL direta da mídia sem depender de login ou de bibliotecas não mantidas.',
+    solution: 'Serviço Node/TypeScript que faz o parsing do post e devolve os links diretos de download.',
   },
   {
     slug: 'assign-keys',
@@ -45,6 +60,9 @@ export const projects: Project[] = [
     description: 'Endpoint que gera um token JWT assinado com chave privada RSA (.pem), usando RS256.',
     tags: ['JavaScript', 'JWT', 'Security'],
     repo: 'https://github.com/ManeMaria/assign_keys',
+    overview: 'Serviço de emissão de tokens JWT assinados com chave assimétrica.',
+    challenge: 'Garantir que a assinatura dos tokens pudesse ser validada por terceiros sem expor a chave privada.',
+    solution: 'Assinatura RS256 com par de chaves RSA (.pem), chave pública livre para validação externa.',
   },
   {
     slug: 'tempo-no-forno',
@@ -53,6 +71,9 @@ export const projects: Project[] = [
       'App para quem está com pressa e quer preparar receitas em menos tempo — ou sem pressa, com mais tempo de forno.',
     tags: ['TypeScript', 'React'],
     repo: 'https://github.com/ManeMaria/tempo-no-forno',
+    overview: 'App de receitas filtradas por tempo de preparo disponível.',
+    challenge: 'Ajudar quem tem pouco tempo a encontrar receitas viáveis sem rolar listas longas.',
+    solution: 'Filtro por tempo no forno/preparo construído em React e TypeScript.',
   },
   {
     slug: 'website-apresetation-s30-pm',
@@ -60,6 +81,9 @@ export const projects: Project[] = [
     description: 'Single page de apresentação do serviço S30.',
     tags: ['TypeScript'],
     repo: 'https://github.com/ManeMaria/website_apresetation_s30_PM',
+    overview: 'Landing page de apresentação do serviço S30.',
+    challenge: 'Comunicar a proposta do serviço em uma única página, de forma objetiva.',
+    solution: 'Single page em TypeScript focada em conversão, sem rotas extras.',
   },
   {
     slug: 'matrix-rain',
@@ -68,6 +92,9 @@ export const projects: Project[] = [
     tags: ['JavaScript', 'Canvas'],
     repo: 'https://github.com/ManeMaria/matrix-rain',
     demo: 'https://manemaria.github.io/matrix-rain/',
+    overview: 'Efeito visual de chuva de código estilo Matrix, para uso em qualquer página.',
+    challenge: 'Rodar uma animação contínua e leve sem travar a thread principal.',
+    solution: 'Canvas puro, sem dependências, desenhando frame a frame via requestAnimationFrame.',
   },
   {
     slug: 'claude-plugins',
@@ -75,6 +102,9 @@ export const projects: Project[] = [
     description: 'Marketplace interno de plugins para o Claude Code.',
     tags: ['Shell', 'DevTools'],
     repo: 'https://github.com/ManeMaria/claude-plugins',
+    overview: 'Marketplace interno para descobrir e instalar plugins do Claude Code.',
+    challenge: 'Centralizar plugins dispersos em scripts soltos em um único catálogo.',
+    solution: 'Estrutura de marketplace em shell scripts, simples de manter e estender.',
   },
 ]
 

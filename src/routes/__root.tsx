@@ -1,6 +1,6 @@
 import { createRootRoute, Outlet } from '@tanstack/react-router'
 import { Footer } from '@/components/footer'
-import { MatrixRain } from '@/components/matrix-rain'
+import { LoadingScreen } from '@/components/loading-screen'
 import { Nav } from '@/components/nav'
 
 export const Route = createRootRoute({
@@ -10,10 +10,11 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <div className="relative min-h-svh">
-      <MatrixRain className="fixed inset-0 -z-10 h-full w-full opacity-20" />
+      <span className="top-line" aria-hidden />
+      <LoadingScreen />
       <div className="flex min-h-svh flex-col">
         <Nav />
-        <main className="mx-auto w-full max-w-5xl flex-1 px-4 sm:px-6">
+        <main className="w-full flex-1 px-4 sm:px-8 lg:px-16">
           <Outlet />
         </main>
         <Footer />
