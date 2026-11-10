@@ -9,7 +9,7 @@ import { GithubIcon } from '@/components/github-icon'
 import { InteractiveCube } from '@/components/interactive-cube'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
-import { projects, stack, workProjects } from '@/lib/projects'
+import { projects, workProjects } from '@/lib/projects'
 
 export const Route = createFileRoute('/')({
   component: Home,
@@ -50,39 +50,9 @@ function Home() {
         </div>
       </section>
 
-      <section id="sobre">
-        <Reveal>
-          <SectionHeading index="01" title="Stack" />
-          <div className="marquee-viewport hidden sm:block">
-            <div className="marquee-track flex w-max gap-3">
-              {[...stack, ...stack].map((tech, i) => (
-                <Badge
-                  key={`${tech}-${i}`}
-                  variant="outline"
-                  className="chamfer-clip-sm bg-background border-primary/50 text-primary shrink-0 rounded-none px-4 py-2 font-mono text-lg"
-                >
-                  {tech}
-                </Badge>
-              ))}
-            </div>
-          </div>
-          <div className="flex flex-wrap gap-3 sm:hidden">
-            {stack.map((tech) => (
-              <Badge
-                key={tech}
-                variant="outline"
-                className="chamfer-clip-sm bg-background border-primary/50 text-primary rounded-none px-4 py-2 font-mono text-lg"
-              >
-                {tech}
-              </Badge>
-            ))}
-          </div>
-        </Reveal>
-      </section>
-
       <section id="projetos">
         <Reveal>
-          <SectionHeading index="02" title="Projetos" subtitle="selecionados" />
+          <SectionHeading index="01" title="Projetos" subtitle="selecionados" />
           <ProjectCarousel projects={featured} />
           <div className="mt-6">
             <Link to="/projetos" className="text-primary text-sm hover:underline">
@@ -94,7 +64,7 @@ function Home() {
 
       <section id="experiencia">
         <Reveal>
-          <SectionHeading index="03" title="Experiência" subtitle="projetos na Loomi" />
+          <SectionHeading index="02" title="Experiência" subtitle="projetos na Loomi" />
           <div className="grid gap-4 sm:grid-cols-2">
             {workProjects.map((work) => (
               <Card key={work.name} className="border-border bg-card/60">
@@ -119,7 +89,7 @@ function Home() {
 
       <section id="contato" className="scroll-mt-20">
         <Reveal>
-          <SectionHeading index="04" title="Contato" />
+          <SectionHeading index="03" title="Contato" />
           <div className="flex flex-wrap gap-4">
             <a
               href="mailto:mirandacesar598@gmail.com"
